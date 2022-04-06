@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Skranji&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -24,12 +24,12 @@
       <div class="right-top-container">
         <div class="top-text">
           It's the best website in the world. You know you need something like
-          this to fulfill your dreams
+          this to fulfill your dreams.
         </div>
         <div class="lower-text">Sign up to go to Mykonos!</div>
       </div>
       <div class="right-middle-container">
-        <form action="#" method="post">
+        <form action="#" method="post" id="my-form">
           <div class="top-form-container">
             <div id="fname">
               <label for="fname">First Name</label>
@@ -81,7 +81,8 @@
                 placeholder="201-305-4211"
                 id="phone"
                 name="phone"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                minlength="12"
+                maxlength="12"
                 required
               />
             </div>
@@ -101,7 +102,9 @@
         </form>
       </div>
       <div class="right-bottom-container">
-        <button class="glow-on-hover" type="submit">CREATE ACCOUNT</button>
+        <button form="my-form" class="glow-on-hover" type="submit">
+          CREATE ACCOUNT
+        </button>
         <div class="already-signed-up">
           Already have an account?
           <a href="https://github.com/bshanz">Log in</a>

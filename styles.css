@@ -111,10 +111,17 @@ input[type="password"] {
   box-sizing: border-box;
   font-family: "odin";
   font-size: 15px;
+  margin-bottom: 8px;
 }
 
 input:focus {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    outline: none;
+  box-shadow: rgba(0, 20, 137, 0.5) 0px 2px 8px 0px;
+}
+
+input:focus:invalid {
+    outline: none;
+  box-shadow: rgb(255, 1, 1) 0px 2px 8px 0px;
 }
 
 label {
@@ -124,11 +131,14 @@ label {
 
 form {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex: 1;
   flex-wrap: wrap;
   gap: 40px;
   overflow: auto;
+  border-width: 0px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .top-form-container {
@@ -146,8 +156,8 @@ form {
 }
 
 .glow-on-hover {
-  font-family: "odin";
-  font-size: 28px;
+  font-family: "Skranji";
+  font-size: 20px;
   width: 220px;
   height: 50px;
   border: none;
@@ -242,3 +252,5 @@ form {
 a {
   color: white;
 }
+
+/* put create account button into form/*
